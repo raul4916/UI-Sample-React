@@ -26,7 +26,7 @@ class App extends Component {
     }
 
     pause() {
-        paused = true
+        paused = !paused;
     }
 }
 
