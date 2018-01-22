@@ -23,7 +23,6 @@ class App extends Component {
 
     clearJobs() {
         axios.delete('http://localhost:9000/jobs');
-        console.log()
     }
 
     pause() {
@@ -57,7 +56,6 @@ class Table extends Component {
 
 
             this.state.data.active.forEach(function (el) {
-                // console.log(el);
                 var progress = Math.round(((new Date().getTime() - el.started_at)) / 1000);
                 var dateCreated = new Date()
                 dateCreated.setTime(parseInt(el.started_at))
@@ -79,7 +77,6 @@ class Table extends Component {
             const activeMap = activeCards.map((card) => (card))
 
             this.state.data.complete.forEach(function (el) {
-                // console.log(el);
                 var dateCreated = new Date()
                 dateCreated.setTime(parseInt(el.started_at))
                 completeCards.push((<Card key={el.id} cardID={el.id} cardNumber={"card" + el.id}
