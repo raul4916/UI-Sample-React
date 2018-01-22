@@ -1,0 +1,87 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-title {
+    font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    padding: 20px;
+
+    border: 2px black double;
+}
+
+.table {
+    align-content: center;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.activeTable {
+    align-content: center;
+    display: inline-flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.completeTable {
+    align-content: center;
+    display: inline-flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.top-info {
+    width: 100%;
+    text-align: right;
+    display: block;
+}
+
+.createJobs {
+    display: flex;
+    text-align: right;
+    background-color: white;
+    width:300px;
+}
+
+#file{
+    alignment: bottom
+}
+
+label {
+    padding: 20px;
+}
+
+
