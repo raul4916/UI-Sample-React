@@ -13,7 +13,7 @@ class Table extends Component {
 			inputBody     : '',
 			inputCategory : ''
 		};
-
+		this.host = "rgms.photography"
 		this.changeCard = this.changeCard.bind(this);
 		this.updateInputTitle = this.updateInputTitle.bind(this);
 		this.updateInputBody = this.updateInputBody.bind(this);
@@ -38,7 +38,7 @@ class Table extends Component {
 	}
 
 	gatherCards() {
-		var data = axios.get('http://localhost:9000/cards.json').then(response => {
+		var data = axios.get('http://'+this.host+'/cards.json').then(response => {
 			this.setState({data : response.data});
 		});
 
@@ -76,7 +76,7 @@ class Table extends Component {
 		} else {
 			this.setState({displayForm : true});
 
-			var data = axios.post('http://localhost:9000/cards.json',{
+			var data = axios.post('http://'+this.host+'/cards.json',{
 				"title"       : this.state.inputTitle,
 				"body"        : this.state.inputBody,
 				"category_id" : this.state.inputCategory

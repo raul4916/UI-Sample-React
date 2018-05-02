@@ -1,6 +1,5 @@
 import React,{ Component } from 'react';
 import axios               from "axios/index";
-import Table               from './Table'
 
 
 class Card extends Component {
@@ -8,6 +7,7 @@ class Card extends Component {
 	constructor( props ) {
 		super(props);
 		this.state = {};
+		this.host = 'rgms.photography'
 	}
 
 	render() {
@@ -69,7 +69,7 @@ class Card extends Component {
 
 
 	deleteCard( id ) {
-		axios.delete('http://localhost:9000/cards/' + id).catch(function ( error ) {
+		axios.delete('http://'+this.host+'/cards/' + id).catch(function ( error ) {
 			console.log("success")
 		});
 	}
