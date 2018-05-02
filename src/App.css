@@ -37,7 +37,6 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 250px;
-    height: 200px;
     margin: 20px;
     padding: 20px;
     border: 2px black double;
@@ -66,7 +65,7 @@
 
 .createCard {
     padding: 10px;
-    top: 80%;
+    top: 70%;
     right: 35%;
     position: fixed;
     display: inline-flex;
