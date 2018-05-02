@@ -28,9 +28,12 @@ class Table extends Component {
 		try {
 			var activeCards = this.getCards();
 			var displayForm = this.getCreationCards();
-			activeCards.push(displayForm);
 
-			return activeCards;
+			var table = <div><div>{activeCards}</div><div>{displayForm}</div></div>
+
+
+			return table;
+
 		} catch ( e ) {
 			//Needed to return something for it to work
 			return <div></div>
