@@ -1,58 +1,54 @@
 # ReactJS UI and Instructions for Ruby on Rails
 
-## Instructions for Running ReactJS.  (assuming on a Linux box using bash)
+## Instructions for Running ReactJS.  (Assuming on a Linux box using bash)
 
 ### You’ll need to have Node >= 6 on your machine.
-    ```
-    cd ui-sample-project/
-    npm install -g create-react-app
-    npm install axios
-    npm start
-    ```
+	```
+	cd ui-sample-project/
+	npm install -g create-react-app
+	npm install axios
+	npm start
+	```
 
-The webpage should open automatically.
+The web page should open automatically.
 
-Now the UI is ready to be used, make sure that you successfully started the backend on the Instructions for Running Ruby on Rails above.
+Now the UI is ready to be used, make sure that you successfully started the backend with the Instructions for Running Ruby on Rails above.
 
 If having difficulties you may access a live demo on sample.rgms.photography  
-##                                                     (If it does not pop up, ISP problems, go to dangerapp.rgms.photography)
+## 													(If it does not pop up, ISP problems, go to dangerapp.rgms.photography)
 
 
+## Instructions for Running Ruby on Rails. (Assuming on a Linux box using bash)
 
-
-
-
-## Instructions for Running Ruby on Rails. (assuming on a Linux box using bash)
-
-1. Install ruby and rails as root on the most up-to-date version
-   The code on ubuntu:
-    ```
-    sudo apt-get install ruby
-    sudo apt-get install rails
-    sudo gem update
-    ```
+1. Install Ruby on Rails as root on the most up-to-date version
+   Code on Ubuntu:
+	```
+	sudo apt-get install ruby
+	sudo apt-get install rails
+	sudo gem update
+	```
 2. Install all the following dependencies using bundle
-    ```
-    cd ./RubyRailsSample
-    bundle install
-    ```
+	```
+	cd ./RubyRailsSample
+	bundle install
+	```
 3. Update configuration on the following file : ```./RubyRailsSample/config/database.yml```
-    a. Change the username and password accordingly to your MySQL
-    b. (optional) Change the databases from development to the name that you like.
-4. On MySQL, login to it and type the following command:
-    ```    CREATE DATABASE <db_name>```
+	a. Change the username and password in accordance with your mysql
+	b. (optional) Change the databases from development to the name that you like.
+4. On mysql, login to it and type the following command:
+	```	CREATE DATABASE <db_name>```
 
-    Note: <db_name> is the name that you placed at the 3rd step.
+	Note: <db_name> is the name that you placed in the 3rd step.
 5. Once finished setting up the Database, at the terminal on the same directory as the previous and type the following:
-    ```rails db:migrate```
+	rails db:migrate
 6. Once complete, type the following at the terminal on the same directory as the previous to connect the server:
-    rails s
+	rails s
 7. Now the server is up and ready to receive requests
 
 ## API Documentation
 
 ### Request: 
-        cards/<id>.json::GET
+		cards/<id>.json::GET
 
 ### Response:
 ```
@@ -67,7 +63,6 @@ If having difficulties you may access a live demo on sample.rgms.photography
   }
 ]
 ```
-
 ### Request: cards.json::GET
 Get all cards
 
@@ -89,10 +84,10 @@ Get all cards
 ### Request: cards.json::POST
 Create cards.
 Required params:
-    id: integer
-    title: string between 1 - 255 characters, unique
-    description: text between 1 - 5000 characters
-    
+	id: integer
+	title: string between 1 - 255 characters, unique
+	description: text between 1 - 5000 characters
+	
 ### Response: 
 #### On success
 ```
@@ -110,8 +105,8 @@ Required params:
 #### On failure:
 ```
 {
-    status:"error", 
-    message:<Error description>
+	status:"error", 
+	message:<Error description>
 }
 ```
 
@@ -134,17 +129,19 @@ update specified card
 ```
 #### On failure:
 {
-    status:"error", 
-    message:<Error description>
+	status:"error", 
+	message:<Error description>
 }
 ```
 
 ### Request: cards/::DELETE
 Get all cards
 ### Response: 
-    No response
+	No response
 
 
-    
-    
-    
+	
+	
+	
+
+
