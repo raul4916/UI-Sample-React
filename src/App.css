@@ -32,56 +32,63 @@
 }
 
 .card {
-    width: 150px;
-    height: 150px;
+    display: inline-flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 200px;
     margin: 20px;
     padding: 20px;
-
     border: 2px black double;
 }
 
 .table {
-    align-content: center;
+    text-align: center;
     display: flex;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    flex-direction: column;
 }
 
 .activeTable {
-    align-content: center;
     display: inline-flex;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
-.completeTable {
-    align-content: center;
-    display: inline-flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-}
+
 .top-info {
     width: 100%;
     text-align: right;
     display: block;
 }
 
-.createJobs {
-    display: flex;
+.createCard {
+    padding: 10px;
+    top: 80%;
+    right: 35%;
+    position: fixed;
+    display: inline-flex;
     text-align: right;
     background-color: white;
-    width:300px;
+    width: 20%;
 }
 
-#file{
-    alignment: bottom
+.input {
+    margin: 10px;
+}
+
+.addImage {
+    height: 100%;
+    width: 100%;
 }
 
 label {
-    padding: 20px;
+    margin: 20px;
 }
 
+button {
+    margin: 20px;
+}
 
